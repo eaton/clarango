@@ -1,9 +1,8 @@
 import { Command, Flags, Interfaces } from '@oclif/core'
 import { Database } from 'arangojs';
 import { Config } from 'arangojs/connection';
-import { emptyDeep } from 'empty-deep';
 import jetpack from 'fs-jetpack';
-import { merge } from 'obby';
+import { emptyDeep, merge } from 'obby';
 
 import { ClarangoConfig, ClarangoConfigSchema } from './config.js';
 

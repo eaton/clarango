@@ -44,6 +44,7 @@ export const backup = async (db: Database, options: BackupOptions = {}) => {
     }
   }
 
+  backup.status.emit('end');
   return meta;
 }
 

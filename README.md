@@ -31,6 +31,7 @@ USAGE
 <!-- commands -->
 * [`clarango backup`](#clarango-backup)
 * [`clarango config`](#clarango-config)
+* [`clarango config edit`](#clarango-config-edit)
 * [`clarango config remove`](#clarango-config-remove)
 * [`clarango config reset`](#clarango-config-reset)
 * [`clarango config set`](#clarango-config-set)
@@ -79,6 +80,27 @@ GLOBAL FLAGS
 ```
 
 _See code: [src/commands/config/index.ts](https://github.com/eaton/clarango/blob/v0.0.0/src/commands/config/index.ts)_
+
+## `clarango config edit`
+
+edit config file manually
+
+```
+USAGE
+  $ clarango config edit [--json] [-d <value>] [-h <value>] [-p <value>] [-s <value>] [-u <value>]
+
+CONNECTION FLAGS
+  -d, --databaseName=<value>  Database name
+  -h, --host=<value>          Server URL (with port)
+  -p, --password=<value>      Server password
+  -s, --server=<value>        [default: default] Saved server preset
+  -u, --username=<value>      Server username
+
+GLOBAL FLAGS
+  --json  Format output as json.
+```
+
+_See code: [src/commands/config/edit.ts](https://github.com/eaton/clarango/blob/v0.0.0/src/commands/config/edit.ts)_
 
 ## `clarango config remove`
 
